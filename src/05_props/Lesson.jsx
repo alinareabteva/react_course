@@ -20,7 +20,7 @@ Component.propTypes = {
 
 //One of: (passed values)
 Component.propTypes = {
-  elem: PropTypes.oneOf(['val', 'val2']),
+  elem: PropTypes.oneOf(['val1', 'val2']),
 }
 
 //One of type: (instead of values passed a list of validators)
