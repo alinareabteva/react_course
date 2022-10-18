@@ -2,12 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Lesson from './04_props/Lesson.jsx'
+import {Lesson, Counter, Button } from './05_props/Lesson.jsx'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Lesson />
+    <Lesson child={<Button />}>
+    <Counter />
+    </Lesson>
   </React.StrictMode>
 );
 
