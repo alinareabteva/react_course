@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import {App, Tabs} from './07_conditional_rendering/Lesson.jsx'
+import {App, Tabs} from './08_lists_keys/Lesson.jsx'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
