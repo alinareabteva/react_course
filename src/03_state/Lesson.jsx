@@ -30,11 +30,6 @@ class CounterButton extends Component{
       counter: ++counter,
     }))
 
-
-    //Super Modern
-
-
-
   }
 
   render(){
@@ -49,6 +44,7 @@ class CounterButton extends Component{
   }
 }
 
+//Super Modern
  const FunctionComponentCounterButton = () => {
   const [counter, setCounter] = useState(0);
 
