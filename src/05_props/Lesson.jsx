@@ -4,47 +4,47 @@ import PropTypes from 'prop-types'
 //propTypes validation
 
 //Node: (usually passes one component to another component)
-Component.propTypes = {
-  node: PropTypes.node,
-}
-
-//Element:(passes the element to component)
-Component.propTypes = {
-  element: PropTypes.element,
-}
-
-//Instance Of: (the passed props is an instance of the class)
-Component.propTypes = {
-  instance: PropTypes.instanceOf(Constructor),
-}
-
-//One of: (passed values)
-Component.propTypes = {
-  elem: PropTypes.oneOf(['val1', 'val2']),
-}
-
-//One of type: (instead of values passed a list of validators)
-Component.propTypes = {
-  elem: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.number,
-  ]),
-}
-
-//Array of / Object of:
-Component.propTypes = {
-  array: PropTypes.arrayOf(PropTypes.string),
-  object: PropTypes.objectOf(PropTypes.number),
-}
-
-//Shape
-Component.propTypes = {
-  obj: PropTypes.shape({
-    color: PropTypes.string,
-    fontSize: PropTypes.number,
-    lineHeight: PropTypes.number,
-  }),
-}
+// Component.propTypes = {
+//   node: PropTypes.node,
+// }
+//
+// //Element:(passes the element to component)
+// Component.propTypes = {
+//   element: PropTypes.element,
+// }
+//
+// //Instance Of: (the passed props is an instance of the class)
+// Component.propTypes = {
+//   instance: PropTypes.instanceOf(Constructor),
+// }
+//
+// //One of: (passed values)
+// Component.propTypes = {
+//   elem: PropTypes.oneOf(['val1', 'val2']),
+// }
+//
+// //One of type: (instead of values passed a list of validators)
+// Component.propTypes = {
+//   elem: PropTypes.oneOfType([
+//     PropTypes.string,
+//     PropTypes.number,
+//   ]),
+// }
+//
+// //Array of / Object of:
+// Component.propTypes = {
+//   array: PropTypes.arrayOf(PropTypes.string),
+//   object: PropTypes.objectOf(PropTypes.number),
+// }
+//
+// //Shape
+// Component.propTypes = {
+//   obj: PropTypes.shape({
+//     color: PropTypes.string,
+//     fontSize: PropTypes.number,
+//     lineHeight: PropTypes.number,
+//   }),
+// }
 
 //----------------------------------------
 
@@ -90,4 +90,6 @@ render(){
   }
 }
 
-export default Lesson;
+export default () => (
+  <Lesson child={<Button />}><Counter /></Lesson>
+);

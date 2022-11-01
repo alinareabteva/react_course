@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import {App, TableApp} from './09_fragment_css/Lesson.jsx'
+import Lesson from './05_props/Lesson.jsx'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <TableApp />
+    <Lesson />
 
   </React.StrictMode>
 );
