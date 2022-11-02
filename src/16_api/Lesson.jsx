@@ -8,13 +8,15 @@ const BASE_PATH = 'https://hn.algolia.com/api/v1';
 const SEARCH_PATH = '/search';
 const SEARCH_PARAM = 'query=';
 
+// when we enter data into the search string and the service returns
+// certain news related to this string.
 class News extends Component {
 
   state = {
     searchQuery: '',
     result: {},
   }
-  
+
 //request to the server
   componentDidMount() {
     const { searchQuery } = this.state;
